@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #0f138a;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Teacher_portal">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="225.0" text="TEACHER PORTAL" textFill="#f2e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="subject" layoutX="63.0" layoutY="115.0" mnemonicParsing="false" onAction="#onaddsubjectaction" prefHeight="25.0" prefWidth="128.0" text="Add Subject">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="question" layoutX="65.0" layoutY="203.0" mnemonicParsing="false" onAction="#onaddquestionaction" prefHeight="25.0" prefWidth="128.0" text="Add Question">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="quiz" layoutX="70.0" layoutY="288.0" mnemonicParsing="false" onAction="#onaddquiz" prefHeight="25.0" prefWidth="128.0" text="Add Quiz">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboard" layoutX="72.0" layoutY="363.0" mnemonicParsing="false" onAction="#ondashboardaction" prefHeight="25.0" prefWidth="128.0" text="Dashboard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="section" layoutX="74.0" layoutY="443.0" mnemonicParsing="false" onAction="#onsectionaction" prefHeight="25.0" prefWidth="128.0" text="Section">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="669.0" layoutY="530.0" mnemonicParsing="false" onAction="#onlogoutaction" style="-fx-background-color: #b20c0c;" text="LOG OUT" textFill="#e8e0e0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

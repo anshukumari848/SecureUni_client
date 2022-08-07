@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3a9a17;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TeacherComment">
+   <children>
+      <Button fx:id="submit" layoutX="284.0" layoutY="529.0" mnemonicParsing="false" onAction="#onsubmitclicked" prefHeight="30.0" prefWidth="122.0" text="Submit" textFill="#091106">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="comment" layoutX="144.0" layoutY="456.0" prefHeight="37.0" prefWidth="536.0" promptText="Add Comment">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="back" layoutX="674.0" layoutY="6.0" mnemonicParsing="false" onAction="#onbackclicked" prefHeight="30.0" prefWidth="112.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="commentinfo" layoutX="78.0" layoutY="82.0" prefHeight="323.0" prefWidth="632.0" />
+      <Label layoutX="17.0" layoutY="15.0" prefHeight="30.0" prefWidth="167.0" text="COMMENTS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1ceda4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student_login">
+   <children>
+      <Button fx:id="teacher" layoutX="24.0" layoutY="536.0" mnemonicParsing="false" onAction="#onteacherclicked" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #060ee4;" text="TEACHER" textFill="#ebebf2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="studentsignupfx" layoutX="576.0" layoutY="22.0" mnemonicParsing="false" onAction="#onstudentsignupclicked" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: #afd30f;" text="Student SIGNUP" textFill="#e5e8db">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" layoutX="375.0" layoutY="459.0" mnemonicParsing="false" onAction="#onloginaction" prefHeight="30.0" prefWidth="147.0" text="LOGIN" textFill="#c90d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="178.0" prefHeight="25.0" prefWidth="105.0" text="Email-id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="261.0" prefHeight="25.0" prefWidth="99.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="162.0" layoutY="365.0" prefHeight="39.0" prefWidth="560.0" textFill="#eb0707" />
+      <PasswordField fx:id="password" layoutX="316.0" layoutY="263.0" prefHeight="25.0" prefWidth="367.0" />
+      <TextField fx:id="email" layoutX="308.0" layoutY="180.0" prefHeight="25.0" prefWidth="361.0" />
+   </children>
+</AnchorPane>

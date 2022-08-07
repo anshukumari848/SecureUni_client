@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ed1f5b;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Cont_List">
+   <children>
+      <Label layoutX="14.0" layoutY="787.0" prefHeight="16.0" prefWidth="144.0" text="NobodyDoesItBetter" textFill="#58ccd0" />
+      <Button fx:id="submit" layoutX="773.0" layoutY="606.0" onAction="#onsubmitclicked" prefHeight="26.0" prefWidth="121.0" text="Submit" textFill="#021414">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+
+         </effect>
+      </Button>
+      <Button fx:id="back" layoutX="913.0" layoutY="24.0" onAction="#onbackclicked" prefHeight="26.0" prefWidth="121.0" text="Back" textFill="#021011">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+
+         </effect>
+      </Button>
+      <Label fx:id="user_email" alignment="CENTER" layoutX="484.0" layoutY="104.0" prefHeight="29.0" prefWidth="293.0" textFill="#33bfc6">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" layoutX="560.0" layoutY="533.0" prefHeight="27.0" prefWidth="207.0" textFill="#d70e0e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="335.0" layoutY="14.0" prefHeight="49.0" prefWidth="336.0" text="Questions List" textFill="#bf2525">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+
+      <ListView fx:id="questions" layoutX="143.0" layoutY="138.0" onMouseClicked="#handleclickedquestions" prefHeight="431.0" prefWidth="268.0" style="-fx-font-size: 30; -fx-font-weight: bold; -fx-font-color: #da1313; -fx-text-inner-color: #da1313; -fx-prompt-text-fill: #da1313;" />
+      <TextArea fx:id="questiondescription" layoutX="434.0" layoutY="155.0" prefHeight="353.0" prefWidth="417.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="remove" layoutX="362.0" layoutY="606.0" onAction="#onremoveclicked" prefHeight="33.0" prefWidth="268.0" text="Remove" textFill="#0f1111">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+
+         </effect>
+      </Button>
+   </children>
+   </AnchorPane>
