@@ -1,5 +1,5 @@
 package questions;
-
+// create a question class 
 public class Question {
     private String questionName;//question
     private String questionType;//Type of question
